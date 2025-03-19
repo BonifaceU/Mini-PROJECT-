@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<body>
+ <html>
+<head>
+<style>
+ul{
+list-style-type:none;
+margin:0
+padding:0
+overflow:hidden;
+background-color:green;
+
+}
+
+li{
+
+ float:vertical;
+}
+
+li a {
+display:in-line block;
+color: Blue;
+text-align:center;
+padding:14px 16px;
+text-decoration:violet;
+}
+
+li a:hover {
+background-colo
+}
+
+.active {
+background-color:White;
+
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+<li><a href="#home"class="active">Home</a></li>
+
+<li><a
+ href="#news">News</a></li>
+<li><a
+ href="#boniface">contact Boniface via: 09011791141 </a></li>
+<li><a 
+href="#about">About</a></li>
+<li><a 
+href="#edit profile">Edit profile</a></li>
+<li><a 
+href="#click to apply">click to apply</a></li>
+<li><a 
+href="#login">login</a></li>
+
+
+</body>
+</html>
+
+<br>
+<br>
+<br>
+
+
+
+
+
+</html>
+<body>
+<br>
+
+Surname <input type="text" placeholder="Surname"required"> 
+  <br>
+  <br>
+First name<input type="text" placeholder="First Name"required"> 
+<br>
+<br>
+Other name<input type="text" placeholder="Other Name"required">
+  <br>
+  <br>
+Date of Birth<input type="date">
+<br>
+<br>
+<br>
+
+<html>
+<head>
+     Click to Upload A Passport<title>Input Image</title>
+</head>
+<body>
+        <input class="file"-upload-input" type="file" onchange="readURL(this)" accept="/*
+         " >
+<br>
+ 
+ </head>
+<body>
+
+<div id="drop-area">
+    <p>Drag & drop files here</p>
+    <input type="file" id="fileElem" multiple style="display:none;">
+    <ul id="file-list"></ul>
+</div>
+
+<script>
+    const dropArea = document.getElementById('drop-area');
+    const fileInput = document.getElementById('fileElem');
+    const fileList = document.getElementById('file-list');
+
+    dropArea.addEventListener('dragover', (event) => {
+        event.preventDefault();
+        dropArea.classList.add('hover');
+    });
+
+    dropArea.addEventListener('dragleave', () => {
+        dropArea.classList.remove('hover');
+    });
+
+    dropArea.addEventListener('drop', (event) => {
+        event.preventDefault();
+        dropArea.classList.remove('hover');
+        const files = event.dataTransfer.files;
+        if (files.length) {
+            handleFiles(files);
+        }
+    });
+
+    dropArea.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener('change', (event) => {
+        handleFiles(event.target.files);
+    });
+
+    function handleFiles(files) {
+        for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            const listItem = document.createElement('li');
+            listItem.textContent = file.name;
+            fileList.appendChild(listItem);
+        }
+    }
+</script>
+
+</body>
+</html>
+<br>
+Gender
+<br>
+<input type="radio"name="Gender" value="Male">Male<br>
+<input type="radio"name="Gender" value="Female">Female<br>
+<br>
+</body>
+</html>
+  <body> 
+<br>
+
+<label
+
+for="State">Choose A State:</label>
+    <br>
+
+<select name ="State"id="State">
+value="State">State</option>
+<option
+<option
+
+value="States">States</option>
+<option
+value="Adamawa">Adamawa</option>
+<option
+value="Benue">Benue</option>
+<option
+<option
+value="Calabar">Calabar</option>
+<option
+value="Delta">Delta</option>
+</select>
+<label
+  <br>
+  <br>
+  <br>
+
+Choose LGA:</label>
+
+<select name ="Local Gov"id="Local Gov">
+value="Local Gov.">Loclal Gov</option>
+<option
+<option
+
+value="local gov">Local Governments</option>
+<option
+<option
+value="Ushongo">Konshisha</option>
+<option
+value="Ushongo">Ushongo</option>
+<option
+value="Calabar">Makurdi</option>
+<option
+value="Delta">Gboko</option>
+</select>
+<br>
+<br>
+
+
+
+Contact Address <input type="text" placeholder="eg. No 12.street.mkd">
+  <br>
+  <br>
+Phone Number<input type="text" placeholder="eg. 09011791141">
+<br>
+</body>
+</html>
+  <body> 
+
+
+ Email Address <input type="text" placeholder="Email.eg.usha@gmail.com" required>
+<br>
+<br>
+   
+   
+    
